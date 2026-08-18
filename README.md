@@ -3,11 +3,11 @@
 ### A Study of Structured vs. Random Point-Based Architectures
 
 Code and results for the ICIP 2026 paper by **Antonis Savva**, **Christos Kyrkou** and
-**Theocharis Theocharides** — KIOS Research and Innovation Center of Excellence and Department of
+**Theocharis Theocharides**, KIOS Research and Innovation Center of Excellence and Department of
 Electrical and Computer Engineering, University of Cyprus.
 
-We benchmark 11 class-imbalance mitigation strategies — six loss reweighting schemes and five
-imbalance-aware losses — across three acquisition modalities (DALES, aerial LiDAR, 641:1; S3DIS,
+We benchmark 11 class-imbalance mitigation strategies (six loss reweighting schemes and five
+imbalance-aware losses) across three acquisition modalities (DALES, aerial LiDAR, 641:1; S3DIS,
 indoor RGB-D, 56:1; STPLS3D, photogrammetric/synthetic, 101:1) and two point-based architectures
 with contrasting sampling strategies: KPConv (structured) and RandLA-Net (random). We then relate
 the outcomes to the geometry of the converged loss landscape.
@@ -54,10 +54,14 @@ so switch the toggle and rerun to produce the other panel of a pair.
 ```bibtex
 @inproceedings{savva2026sampling,
   author    = {Savva, Antonis and Kyrkou, Christos and Theocharides, Theocharis},
+  booktitle = {2026 IEEE International Conference on Image Processing (ICIP)}, 
   title     = {How Sampling Strategy Affects Imbalance Mitigation in {LiDAR} Segmentation:
                A Study of Structured vs. Random Point-Based Architectures},
-  booktitle = {IEEE International Conference on Image Processing (ICIP)},
-  year      = {2026}
+  year      = {2026},
+  volume    = {},
+  number    = {},
+  pages     = {1-6},
+  doi       = {10.1109/ICIP61757.2026.11630063}}
 }
 ```
 
