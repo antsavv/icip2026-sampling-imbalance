@@ -1,0 +1,85 @@
+MIT License
+
+Copyright (c) 2026 Antonis Savva, Christos Kyrkou, Theocharis Theocharides
+                   KIOS Research and Innovation Center of Excellence,
+                   University of Cyprus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+================================================================================
+SCOPE — please read before reusing
+================================================================================
+
+The MIT terms above cover our own contributions: the reweighting schemes and
+imbalance-aware losses, the loss landscape diagnostics, the analysis and figure
+scripts at the repository root, and the modifications made to both upstream
+codebases.
+
+This repository bundles two independent codebases derived from different
+upstream projects, under DIFFERENT licences. The repository as a whole is not
+uniformly MIT.
+
+--------------------------------------------------------------------------------
+KPConv-PyTorch/ — MIT
+--------------------------------------------------------------------------------
+
+Derived from KPConv-PyTorch by Hugues Thomas
+https://github.com/HuguesTHOMAS/KPConv-PyTorch
+MIT License, Copyright (c) 2019 HuguesTHOMAS.
+
+Fully MIT-licensed. Full text and third-party notices in KPConv-PyTorch/LICENSE.
+
+--------------------------------------------------------------------------------
+RandLA-Net/ — CC BY-NC-SA 4.0 applies to inherited components
+--------------------------------------------------------------------------------
+
+Derived from the PyTorch port at
+https://github.com/liuxuexun/RandLA-Net-Pytorch-New (declared MIT), which builds
+on https://github.com/qiqihaer/RandLA-Net-pytorch and copies components from the
+official TensorFlow implementation
+https://github.com/QingyongHu/RandLA-Net, released under
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+
+A downstream project can license its own contributions but cannot relicense code
+it copied. Components originating in the official implementation therefore
+REMAIN under CC BY-NC-SA 4.0, which:
+
+  - restricts use to non-commercial purposes, and
+  - requires derivative works to be shared under the same terms.
+
+The full licence text is retained at RandLA-Net/license.txt. Anyone reusing that
+half of this repository should treat CC BY-NC-SA 4.0 as the binding constraint.
+
+--------------------------------------------------------------------------------
+Third-party components used by both halves
+--------------------------------------------------------------------------------
+
+loss-landscape — Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer, Tom Goldstein
+https://github.com/tomgoldstein/loss-landscape
+MIT License. The filter-normalised weight perturbation approach used in the
+diagnostics scripts of both halves follows this work ("Visualizing the Loss
+Landscape of Neural Nets", NeurIPS 2018).
+
+nanoflann — Jose Luis Blanco-Claraco and contributors
+https://github.com/jlblancoc/nanoflann
+BSD 2-Clause License. The full licence text is retained in the headers of
+KPConv-PyTorch/cpp_wrappers/cpp_utils/nanoflann/nanoflann.hpp,
+RandLA-Net/utils/cpp_wrappers/cpp_utils/nanoflann/nanoflann.hpp and
+RandLA-Net/utils/nearest_neighbors/nanoflann.hpp, and must be kept intact.

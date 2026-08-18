@@ -1,0 +1,17 @@
+metric,value
+desired_percent,0.1
+K,20
+original_train_loss,1.8131692309817442
+original_val_loss,1.8623717915386806
+original_grad_norm,1372.4234619140625
+original_mean_iou,0.7364196181297302
+mean_orthogonality,0.0018568795640021563
+execution_time_seconds,1307.9105632305145
+original_class_0_iou,0.9531729817390442
+original_class_1_iou,0.9185495972633362
+original_class_2_iou,0.8249408006668091
+original_class_3_iou,0.16326940059661865
+original_class_4_iou,0.8012085556983948
+original_class_5_iou,0.5972162485122681
+original_class_6_iou,0.7144349217414856
+original_class_7_iou,0.9185641407966614

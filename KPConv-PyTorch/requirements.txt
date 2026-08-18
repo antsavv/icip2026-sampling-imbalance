@@ -1,0 +1,27 @@
+# Python 3.10
+#
+#   conda create --name kpconv-pt python=3.10
+#   conda activate kpconv-pt
+#   pip install -r requirements.txt
+#
+# Then compile the C++ extensions, see README.md / INSTALL.md.
+#
+# Versions below are those used for the paper.
+
+# core
+torch==2.7.0
+numpy==2.2.6
+scikit-learn==1.6.1   # (KDTree for neighbour queries / subsampling)
+plyfile==1.1.2        # (point cloud I/O, DALES ascii->bin conversion)
+
+# figures and analysis
+matplotlib>=3.7       # 3.10.3
+pandas>=2.0           # 2.3.0  (diagnostics_visualizer.py, visualize-* scripts)
+seaborn>=0.13         # 0.13.2 (diagnostics_visualizer.py box plots)
+
+# optional: only needed for the interactive point cloud viewers in
+# utils/mayavi_visu.py. These are imported lazily inside functions, so training,
+# testing and every figure in the paper run without them.
+#
+# mayavi
+# PyQt5

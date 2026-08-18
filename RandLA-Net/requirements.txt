@@ -1,0 +1,22 @@
+# Python 3.10
+#
+#   conda create --name randlanet-pt-310 python=3.10
+#   conda activate randlanet-pt-310
+#   pip install -r requirements.txt
+#
+# Then build the native ops with compile_op.sh, see README.md.
+#
+# Versions below are those used for the paper.
+
+# core
+torch==2.9.1
+numpy==2.2.6
+scikit-learn==1.7.2
+pandas==2.3.3
+
+# build-time, for utils/nearest_neighbors (installed by compile_op.sh)
+Cython==3.2.2
+
+# figures (diagnostics_visualizer.py only)
+matplotlib>=3.7
+seaborn>=0.13

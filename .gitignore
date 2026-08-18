@@ -1,0 +1,12 @@
+**/build
+**/desktop.ini
+core
+
+__pycache__/
+*.py[cod]
+
+*.so
+*.egg-info/
+
+.vscode
+*.code-workspace

@@ -1,0 +1,12 @@
+**/build
+**/desktop.ini
+/data
+/docker_scripts
+/kernels/dispositions
+core
+
+__pycache__/
+*.py[cod]
+
+*.so
+.vscode

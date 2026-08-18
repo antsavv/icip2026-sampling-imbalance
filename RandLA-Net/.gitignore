@@ -1,0 +1,17 @@
+**/build
+**/desktop.ini
+/data
+/docker_scripts
+/kernels/dispositions
+core
+
+# VSCode related
+*.code-workspace
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
